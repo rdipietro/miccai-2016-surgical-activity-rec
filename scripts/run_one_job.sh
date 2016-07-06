@@ -2,8 +2,8 @@
 
 #SBATCH
 #SBATCH --job-name=gpu
-#SBATCH --time=0-16:0:0
-#SBATCH -p gpu
+#SBATCH --time=0-24:0:0
+#SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
@@ -14,6 +14,4 @@ echo
 echo "Running $@ on $SLURMD_NODENAME ..."
 echo
 
-# Arguments are used to name the output notebook.
-jupyter nbconvert ../train_and_eval.ipynb --to notebook --output "trained $@" --execute --ExecutePreprocessor.timeout=-1
-
+python ../train_and_summarize.py "$@"
