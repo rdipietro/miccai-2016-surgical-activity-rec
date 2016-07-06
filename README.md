@@ -196,7 +196,7 @@ consisting of 4 users (those with only one trial each), and we use the resulting
 hyperparameters for both JIGSAWS experiments and MISTIC-SL experiments.
 ```
 
-### Code Refactored
+### 7/6/2016: Code Refactored
 
 The code has been refactored to be more modular and to have
 fewer dependencies (IPython and Jupyter are no longer required). The
