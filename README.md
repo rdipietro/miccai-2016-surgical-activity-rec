@@ -196,10 +196,14 @@ consisting of 4 users (those with only one trial each), and we use the resulting
 hyperparameters for both JIGSAWS experiments and MISTIC-SL experiments.
 ```
 
-### 7/6/2016: Code Refactored
+### July 6, 2016: Code Refactored
 
 The code has been refactored to be more modular and to have
 fewer dependencies (IPython and Jupyter are no longer required). The
 refactored code was tested by reproducing the results in the paper. If you
 prefer the old version, containing Jupyter notebooks instead of Python files,
 then run `git checkout notebooks` after cloning the repository.
+
+### November 7, 2018: András Skornyák Updated Code for TensorFlow 1.12 Compatibility
+
+András Skornyák's updates are available here: https://github.com/Skori/miccai-2016-surgical-activity-rec-Refactored
